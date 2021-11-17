@@ -1,57 +1,35 @@
-# Project Name
+---
+page_type: sample
+description: "A minimal sample app that can be used to demonstrate deploying FastAPI apps to Azure App Service on Linux."
+languages:
+- python
+products:
+- azure
+- azure-app-service
+---
 
-(short, 1-3 sentenced, description of the project)
+# Python FastAPI sample for Azure App Service (Linux)
 
-## Features
+This is a minimal FastAPI app that can be deployed to Azure App Service on Linux.
 
-This project framework provides the following features:
+### Install the requrements
+`pip install -r requirements.txt`
 
-* Feature 1
-* Feature 2
-* ...
+### Start the application
+`uvicorn main:app --reload`
 
-## Getting Started
+### Example call
+http://127.0.0.1:8000/items/4?q=my%20test%20query
 
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+### Example json response
+`{"item_id": 4, "q": "my test query"}`
 
 
-## Demo
+# More information
+For additional instructions on running the code as well as deploying it to Azure, see [Quickstart: Create a Python app in Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/quickstart-python).
 
-A demo app is included to show how to use the project.
+To learn more about FastAPI, see [FastAPI](https://fastapi.tiangolo.com/).
 
-To run the demo, follow these steps:
+## Contributing
 
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
