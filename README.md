@@ -1,6 +1,6 @@
 ---
 page_type: sample
-description: "A minimal sample app that can be used to demonstrate deploying FastAPI apps to Azure App Service on Linux."
+description: "A minimal sample app that can be used to demonstrate deploying FastAPI apps to Azure App Service."
 languages:
 - python
 products:
@@ -8,9 +8,18 @@ products:
 - azure-app-service
 ---
 
-# Python FastAPI sample for Azure App Service (Linux)
+# Deploy a Python (FastAPI) web app to Azure App Service - Sample Application
 
-This is a minimal FastAPI app that can be deployed to Azure App Service on Linux.
+This is the sample FastAPI application for the Azure Quickstart [Deploy a Python (Django, Flask or FastAPI) web app to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python).  For instructions on how to create the Azure resources and deploy the application to Azure, refer to the Quickstart article.
+
+Sample applications are available for the other frameworks here:
+- Django [https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart)
+- Flask [https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart)
+
+If you need an Azure account, you can [create on for free](https://azure.microsoft.com/en-us/free/).
+
+
+To try the application on your local machine:
 
 ### Install the requrements
 `pip install -r requirements.txt`
@@ -24,12 +33,4 @@ http://127.0.0.1:8000/items/4?q=my%20test%20query
 ### Example json response
 `{"item_id": 4, "q": "my test query"}`
 
-
-# More information
-For additional instructions on running the code as well as deploying it to Azure, see [Quickstart: Create a Python app in Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/quickstart-python).
-
 To learn more about FastAPI, see [FastAPI](https://fastapi.tiangolo.com/).
-
-## Contributing
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
